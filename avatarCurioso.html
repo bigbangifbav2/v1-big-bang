@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+		 	<meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+            <script type="text/javascript" src="jquery.js"></script>
+
+            <meta http-equiv="pragma" content="no-cache">
+
+            <title>Big Bang Game</title>
+
+            <link rel="icon" href="#" />
+
+            <link rel="stylesheet" type="text/css" href="css/styleNiveis.css"/> 
+
+            <script type="text/javascript" src="js/jquery-1.5.2.js"></script>
+
+            <script type="text/javascript" src="js/bigbang.js"></script>
+
+            <script language="javascript" type="text/javascript">
+	$(function(){
+	
+		$("body").css("display", "none");
+	 
+		$("body").fadeIn('slow');
+	 
+		$("a").click(function(event){
+			event.preventDefault();
+			linkLocation = this.href;
+			$("body").fadeOut(1000, redirectPage);
+		});
+	 
+		function redirectPage() {
+			window.location = linkLocation;
+		}
+		
+	});
+
+	</script>
+	<script type="text/javascript">
+		function key(){
+			document.getElementById('key').play();
+		}
+
+		function select(){
+			document.getElementById('select').play();
+		}
+	</script>
+
+</head>
+	<body>
+
+		<div class="row espaco">
+			<div class="col-7">
+				<audio id="key">
+		       		<source src="musica/key.ogg" type="audio/ogg">
+			    </audio>
+
+			    <audio id="select">
+		        	<source src="musica/selecao.ogg" type="audio/ogg">
+		   		</audio>
+
+
+				
+			</div>
+
+		</div>
+			
+		<div class="row justify-content-center">
+			<div class="col-9 ">
+				<div class="avatars">
+				<form action="curioso.php" method="POST">
+		 			<input id="jogador" class="Ijogar" type="text" name="jogador" autofocus required placeholder="Digite seu nome..." maxlength="17"><br><br>
+		 			<input onclick="key()" class="radio" type="radio" name="avatar" value="monstrinho1" checked><img class="escolha" src="img/avatar/monstrinho1.png">
+		 			<input onclick="key()" class="radio" type="radio" name="avatar" value="monstrinho2"><img class="escolha" src="img/avatar/monstrinho2.png">
+		 			<input onclick="key()" class="radio" type="radio" name="avatar" value="monstrinho3"><img class="escolha" src="img/avatar/monstrinho3.png">
+		 			<input onclick="key()" class="radio" type="radio" name="avatar" value="monstrinho4"><img class="escolha" src="img/avatar/monstrinho4.png"><br><br>
+		 			<input type="hidden" name="permissao" value="1">
+		 			<button class="jogar" onmousedown="select()" title="Jogar">Jogar</button>
+	 			</form>
+				</div>
+			</div>
+
+		</div>	
+
+		<div class="row">
+			<div class="col-2">
+				<div id="bt_som"></div>
+
+	 		<a href="niveis.html"><img class="efeito" src="img/voltar.png" title="Voltar"></a>
+			</div>
+		</div>	
+
+		
+
+    </body>
+</html>

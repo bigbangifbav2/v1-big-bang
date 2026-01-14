@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<!-- Meta tags Obrigatórias -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+            <meta http-equiv="pragma" content="no-cache">
+
+            <title>Big Bang Game</title>
+
+            <link rel="icon" href="#" />
+
+            <link rel="stylesheet" type="text/css" href="css/styleBigBang.css"/> 
+
+            <script type="text/javascript" src="js/jquery-1.5.2.js"></script>
+
+            <script type="text/javascript" src="js/bigbang.js"></script>
+
+            <script language="javascript" type="text/javascript">
+
+        $(function(){
+        
+            $("body").css("display", "none");
+         
+            $("body").fadeIn('slow');
+         
+            $("a").click(function(event){
+                event.preventDefault();
+                linkLocation = this.href;
+                $("body").fadeOut(1000, redirectPage);
+            });
+         
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+            
+        });
+        </script>        
+    </head>
+    <body>
+
+        <div class="row justify-content-center">
+            <div class="col-9">
+               <div class="row ">
+                    
+                    <div>
+                        <audio autoplay id="bgsound" loop>
+                            <source src="musica/bensound-enigmatic.mp3" type="audio/mp3">
+                        </audio>
+
+                  	<!-- <img id="fundo" src="img/fundo_telaprincipal.png" width="1373" height="661" alt=""/> -->
+                        <img class="estrutura" src="img/fundo.png"/>
+
+                           
+                        <a href="niveis.html"><img id="bt_play" src="img/play.png" alt="play" title="Jogar" /></a>
+                        <a href="tutorial.html"><img id="bt_tutorial" src="img/tutorial.png" alt="" title="Tutorial"/></a>
+                        <a href="ranking.php"><img id="bt_ranking" src="img/ranking.png" alt="" title="Ranking"/></a>
+                        <a href="creditos.html"><img id="bt_creditos" src="img/creditos.png" alt="" title="Créditos"/></a>
+                        <div id="bt_som" onclick="musica()"><img src="img/som_on.png" id="imgSom" title="ON/OFF"></div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>

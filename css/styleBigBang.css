@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+body{
+	
+	background-image:  -webkit-radial-gradient(#9329B3, #0D0D2F); /* For Safari 5.1 to 6.0 */
+	background-image:  -o-radial-gradient(#9329B3, #0D0D2F); /* For Opera 11.1 to 12.0 */
+	background-image:  -moz-radial-gradient(#9329B3, #0D0D2F); /* For Firefox 3.6 to 15 */
+	background-image:  radial-gradient(#9329B3, #0D0D2F); /* Standard syntax */
+	background-image: -moz-radial-gradient(#9329B3, #0D0D2F);
+
+
+}
+
+.estrutura{
+	width: 94%;
+
+}
+#bt_play{
+	position: absolute;
+
+	bottom: 38%;
+
+	left: 37%;
+
+	width: 14%;
+	}
+#bt_play:hover{
+	box-shadow: 0px 0px 35px #CCC;
+	border-radius:180px;
+	-moz-border-radius:180px;
+	-webkit-border-radius:180px;
+}
+#bt_tutorial{
+	position: absolute;
+
+	bottom: 76%;
+
+	left: 32%;
+
+	width: 10%;
+}
+
+#bt_ranking{
+	position: absolute;
+
+	bottom: 32%;
+
+	left: 64%;
+
+	width: 10%;
+	}
+#bt_creditos{
+	position: absolute;
+
+	bottom: 14%;
+
+	left: 21%;
+
+	width: 10%;
+}
+#bt_creditos:hover{
+	box-shadow: 0px 0px 25px #CCC;
+	border-radius:180px;
+	-moz-border-radius:180px;
+	-webkit-border-radius:180px;
+}
+#bt_ranking:hover{
+	box-shadow: 0px 0px 25px #CCC;
+	border-radius:180px;
+	-moz-border-radius:180px;
+	-webkit-border-radius:180px;
+}
+#bt_tutorial:hover{
+	box-shadow: 0px 0px 25px #CCC;
+	border-radius:180px;
+	-moz-border-radius:180px;
+	-webkit-border-radius:180px;
+}
+
+#bt_som #imgSom{
+	position: absolute;
+
+	bottom: 4%;
+
+	left: 70%;
+
+	width: 10%;
+}
+#bt_som #imgSom:hover{
+	box-shadow: 0px 0px 25px #CCC;
+	border-radius:180px;
+	-moz-border-radius:180px;
+	-webkit-border-radius:180px;
+}

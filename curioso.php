@@ -1,0 +1,2117 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Meta tags Obrigatórias -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<title>Big Bang Game</title>
+
+		<link rel="icon" href="#" />
+
+		<link rel="stylesheet" type="text/css" href="css/style.css"/> 
+
+	    <script type="text/javascript" src="js/jquery-1.5.2.js"></script>
+
+	    <script type="text/javascript" src="js/bigbang.js"></script>
+
+		<script language="javascript" type="text/javascript">
+
+	$(function(){
+	
+		$("body").css("display", "none");
+	 
+		$("body").fadeIn('slow');
+	 
+		$("a").click(function(event){
+			event.preventDefault();
+			linkLocation = this.href;
+			$("body").fadeOut(1000, redirectPage);
+		});
+	 
+		function redirectPage() {
+			window.location = linkLocation;
+		}
+		
+	});
+
+</script>
+ <script>
+    //Script do menu
+    function animacao(){
+
+        $("#botao").click(function(){                   //Evento de quando o usuário clica para mostrar ou esconder o menu
+            var scre = $("body").width();
+            if ( scre > 1200 ) {
+
+                if (this.state != '1'){                 //Crivo de quando o menu esconde ou aparece
+
+                    $("#menu2").animate({"left":"0px"},700);    //Animação para o menu aparecer
+
+
+                    $("#botao").animate({"left":"120px"},700);  //Animação para o botão seguir o menu
+
+                    this.state='1';                 //Mudança do estado no próximo clique no botão ele ficará escondido
+
+                    $(this).html("<img class='seta' src='img/seta_esq.png' />");//mudança da imagem do botão no caso uma seta agora para a esquerda
+
+                }else{                          //O “se não” do crivo que agora irá esconder o menu 
+
+                    $("#menu2").animate({"left":"-399px"},700);   //Animação para o menu ficar escondido
+
+                    $("#botao").animate({"left":"0px"},700);    //Animação para o botãoficar no canto da tela
+
+                    this.state='0';                 //Mudança do estado no próximo clique no botão ele aparecerá
+
+                    $(this).html("<img id='me' src='img/menu_dir.png' />");//mudança da imagem do botão no caso uma seta agora para a direita
+
+                }//Fechamento do crivo
+
+            }else  if ( scre >= 992 && scre <=1199.98 ) {
+
+                if (this.state != '1'){                 //Crivo de quando o menu esconde ou aparece
+
+                    $("#menu2").animate({"left":"0px"},700);    //Animação para o menu aparecer
+
+                    $("#botao").animate({"left":"94.8px"},700);  //Animação para o botão seguir o menu
+
+                    this.state='1';                 //Mudança do estado no próximo clique no botão ele ficará escondido
+
+                    $(this).html("<img class='seta' src='img/seta_esq.png' />");//mudança da imagem do botão no caso uma seta agora para a esquerda
+
+                }else{                          //O “se não” do crivo que agora irá esconder o menu 
+
+                    $("#menu2").animate({"left":"-315.21px"},700);   //Animação para o menu ficar escondido
+
+                    $("#botao").animate({"left":"0px"},700);    //Animação para o botãoficar no canto da tela
+
+                    this.state='0';                 //Mudança do estado no próximo clique no botão ele aparecerá
+
+                    $(this).html("<img id='me' src='img/menu_dir.png' />");//mudança da imagem do botão no caso uma seta agora para a direita
+
+                }//Fechamento do crivo
+
+            } else  if ( scre >= 768 && scre <=991.98 ) {
+
+                if (this.state != '1'){                 //Crivo de quando o menu esconde ou aparece
+
+                    $("#menu2").animate({"left":"0px"},700);    //Animação para o menu aparecer
+
+                    $("#botao").animate({"left":"65.6px"},700);  //Animação para o botão seguir o menu
+
+                    this.state='1';                 //Mudança do estado no próximo clique no botão ele ficará escondido
+
+                    $(this).html("<img class='seta' src='img/seta_esq.png' />");//mudança da imagem do botão no caso uma seta agora para a esquerda
+
+                }else{                          //O “se não” do crivo que agora irá esconder o menu 
+
+                    $("#menu2").animate({"left":"-218.4px"},700);   //Animação para o menu ficar escondido
+
+                    $("#botao").animate({"left":"0px"},700);    //Animação para o botãoficar no canto da tela
+
+                    this.state='0';                 //Mudança do estado no próximo clique no botão ele aparecerá
+
+                    $(this).html("<img id='me' src='img/menu_dir.png' />");//mudança da imagem do botão no caso uma seta agora para a direita
+
+                }//Fechamento do crivo
+
+                } else  if ( scre >= 576 && scre <=767.98 ) {
+
+                if (this.state != '1'){                 //Crivo de quando o menu esconde ou aparece
+
+                    $("#menu2").animate({"left":"0px"},700);    //Animação para o menu aparecer
+
+                    $("#botao").animate({"left":"43.7px"},700);  //Animação para o botão seguir o menu
+
+                    this.state='1';                 //Mudança do estado no próximo clique no botão ele ficará escondido
+
+                    $(this).html("<img class='seta' src='img/seta_esq.png' />");//mudança da imagem do botão no caso uma seta agora para a esquerda
+
+                }else{                          //O “se não” do crivo que agora irá esconder o menu 
+
+                    $("#menu2").animate({"left":"-145.6px"},700);   //Animação para o menu ficar escondido
+
+                    $("#botao").animate({"left":"0px"},700);    //Animação para o botãoficar no canto da tela
+
+                    this.state='0';                 //Mudança do estado no próximo clique no botão ele aparecerá
+
+                    $(this).html("<img id='me' src='img/menu_dir.png' />");//mudança da imagem do botão no caso uma seta agora para a direita
+
+                }//Fechamento do crivo
+
+                } else  if ( scre <= 575.98 ) {
+
+                    if (this.state != '1'){                 //Crivo de quando o menu esconde ou aparece
+
+                        $("#menu2").animate({"left":"0px"},700);    //Animação para o menu aparecer
+
+                        $("#botao").animate({"left":"18.2px"},700);  //Animação para o botão seguir o menu
+
+                        this.state='1';                 //Mudança do estado no próximo clique no botão ele ficará escondido
+
+                        $(this).html("<img class='seta' src='img/seta_esq.png' />");//mudança da imagem do botão no caso uma seta agora para a esquerda
+
+                }else{                          //O “se não” do crivo que agora irá esconder o menu 
+
+                    $("#menu2").animate({"left":"-60.7px"},700);   //Animação para o menu ficar escondido
+
+                    $("#botao").animate({"left":"0px"},700);    //Animação para o botãoficar no canto da tela
+
+                    this.state='0';                 //Mudança do estado no próximo clique no botão ele aparecerá
+
+                    $(this).html("<img id='me' src='img/menu_dir.png' />");//mudança da imagem do botão no caso uma seta agora para a direita
+
+                }//Fechamento do crivo
+            }
+        });//Fechamento do evento
+
+    };
+    $(document).ready(function () {
+        // Adicionar classes ao carregar o documento
+        animacao();
+
+        $(window).resize(function() {
+            // Adicionar sempre que a tela for redimensionada
+            animacao(); 
+
+      
+        });
+    });
+
+</script>
+<script type="text/javascript">
+	var simbolos = {actinio:"Ac", francio:"Fr", lantanio:"La", radio:"Ra", iodo:"I", magnesio:"Mg", cesio:"Cs", platina:"Pt", tungstenio:"W", fluor:"F", potassio:"K", litio:"Li", neonio:"Ne", aluminio:"Al", enxofre:"S"};
+
+	function simbolo (nome) {
+			if (simbolos[nome]) {
+					document.getElementById(nome).innerHTML = simbolos[nome];
+					document.getElementById(nome).style.backgroundColor = "#00A575";	
+			}
+	}
+
+</script>
+<style type="text/css">
+
+body{
+		background-color: #013a30 ;
+}
+</style>
+
+<script type="text/javascript">
+		window.history.forward(1);
+</script>
+
+</head>
+
+
+<body>
+	<div class="row">
+
+        <div class="col-2">
+
+            <div class="row justify-content-center">
+                <audio id="erro">
+
+		        	<source src="musica/erro.ogg" type="audio/ogg">
+
+		    	</audio>
+
+			    <audio id="acerto">
+
+			        <source src="musica/acerto.ogg" type="audio/ogg">
+
+	   			 </audio>
+				     <!-- Nome do jogador e avatar -->
+
+				<?php
+
+					$jogador 	= $_POST['jogador'];
+
+					$avatar 	= $_POST['avatar'];
+
+					$permissao 	= $_POST['permissao'];
+
+
+
+					if ($permissao != 1) {
+
+					echo "<script>window.location('http://bigbanggame.esy.es/');</script>";
+
+					}
+
+
+
+					echo '	<div class="jogador-info"> <div class="jogador">
+
+							<div class="nomeNivel">NÍVEL: CURIOSO</div>
+
+							<img class="avatar" src="img/avatar/'.$avatar.'.png"><br>
+
+							<div class="nomeJogador">'.$jogador.'</div>
+
+							</div>';
+
+					echo '	<div class="pontuacao">
+
+							<label>Pontos:</label><div class="pontos" id="score">00</div>
+
+							</div>';
+
+					echo '	<div class="msg" id="msg">
+
+							<div id="mensag"></div>
+
+						</div></div>';
+					
+				?>
+
+			</div>
+
+			<div class="row justify-content-center">
+            	
+            	<div id="menu2" >
+
+
+					<div id="botao"><img id='me' src='img/menu_dir.png' /></div>
+
+					<div id="conteudo_menu">
+
+						<img class="img-diag" src="img/diagrama_verde.png">
+
+					</div>
+
+				</div>
+            
+            </div>
+
+        </div>
+
+
+
+		<div class="tabela col-7">
+
+                <div class="row justify-content-center">
+
+                <div class=" numVertical numerosHorizontais" ></div>
+                
+                <div class="espaco-branco numerosHorizontais" > 1</div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+                
+                <div class="espaco-branco"></div>
+                
+                <div class="espaco-branco numerosHorizontais" >18</div>
+
+            </div>
+
+             <div class="row justify-content-center">
+
+                <div class=" numVertical numerosHorizontais" >1</div>
+               
+                <button onclick="verificar(value)" value="hidrogenio" class="quadrado text-xl-center"id="hidrogenio"><div class="propriedadeselemento"></div></button>
+
+                <div class="espaco-branco numerosHorizontais" >2</div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+               <div class="espaco-branco numerosHorizontais" >13</div>
+
+                <div class="espaco-branco numerosHorizontais" >14</div>
+
+                <div class="espaco-branco numerosHorizontais" >15</div>
+
+                <div class="espaco-branco numerosHorizontais" >16</div>
+
+                <div class="espaco-branco numerosHorizontais" >17</div>
+
+                <button onclick="verificar(value)" value="helio" class="quadrado" id="helio"><div class="propriedadeselemento"></div></button>
+            
+            </div>
+
+             <div class="row justify-content-center">
+                <div class=" numVertical numerosHorizontais" >2</div>
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <button onclick="verificar(value)" id="boro" value="boro" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="carbono" value="carbono"class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="nitrogenio" value="nitrogenio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="oxigenio" value="oxigenio"class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="fluor" value="fluor" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+            </div>    
+
+            
+             <div class="row justify-content-center">
+                <div class=" numVertical numerosHorizontais" >3</div>
+                <button onclick="verificar(value)" id="sodio" value="sodio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="magnesio" value="magnesio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <div class="espaco-branco numerosHorizontais" >3</div>
+
+                <div class="espaco-branco numerosHorizontais" >4</div>
+
+                <div class="espaco-branco numerosHorizontais" >5</div>
+
+                <div class="espaco-branco numerosHorizontais" >6</div>
+
+                <div class="espaco-branco numerosHorizontais" >7</div>
+
+                <div class="espaco-branco numerosHorizontais" >8</div>
+
+                <div class="espaco-branco numerosHorizontais" >9</div>
+                <div class="espaco-branco numerosHorizontais" >10</div>
+
+                <div class="espaco-branco numerosHorizontais" >11</div>
+
+                <div class="espaco-branco numerosHorizontais" >12</div>
+
+                <button onclick="verificar(value)" id="aluminio" value="aluminio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="silicio" value="silicio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="enxofre" value="enxofre" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="cloro" value="cloro" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+            </div>
+
+             <div class="row justify-content-center">
+                <div class=" numVertical numerosHorizontais" >4</div>
+
+                <button onclick="verificar(value)" id="potassio" value="potassio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="calcio" value="calcio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="titanio" value="titanio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="manganes" value="manganes" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="ferro" value="ferro" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="cobre" value="cobre" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="zinco" value="zinco" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="criptonio" value="criptonio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+            </div>
+
+             <div class="row justify-content-center">
+                <div class=" numVertical numerosHorizontais" >5</div>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="prata" value="prata" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="iodo" value="iodo" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+
+            </div>
+
+
+             <div class="row justify-content-center">
+                <div class=" numVertical numerosHorizontais" >6</div>
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <div class="espaco-branco"></div>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="osmio" value="osmio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="platina" value="platina"class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="ouro" value="ouro" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="mercurio" value="mercurio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="chumbo" value="chumbo" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+
+            </div>
+
+           
+             <div class="row justify-content-center">
+                <div class=" numVertical numerosHorizontais" >7</div>
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <div class="espaco-branco"></div>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+            </div>
+
+           
+             <div class="row justify-content-center">
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+                <div class="espaco-branco diminuir"></div>
+
+            </div>
+
+           
+             <div class="row justify-content-center">
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <button onclick="verificar(value)" id="lantanio" value="lantanio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="promecio" value="promecio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <div class="espaco-branco"></div>
+
+            </div>
+
+           
+             <div class="row justify-content-center">
+
+                <div class="espaco-branco"></div>
+
+                <div class="espaco-branco"></div>
+
+                <button onclick="verificar(value)" id="actinio" value="actinio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" id="uranio" value="uranio" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+
+                <button onclick="verificar(value)" class="quadrado"><div class="propriedadeselemento"></div></button>
+                <div class="espaco-branco"></div>
+
+                </div>
+
+               		 <div class="row justify-content-center">
+            		
+            		<!-- É AQUI A CAIXA QUE IRÁ CONTER AS DICAS NA TELA -->
+
+    					<div class="dicas">
+
+    						<h6 id="dicaUm"></h6>
+
+    						<h6 id="dicaDois"></h6>
+
+    						<h6 id="dicaTres"></h6>
+
+    					</div>
+
+            		</div>
+            
+        	</div>
+
+
+        	<div class="col-3">
+               	<div class="row justify-content-center">
+               		<div class="figuras">
+
+
+
+
+						<?php
+
+
+
+							$fig1 = 0;
+
+							$fig2 = 0;
+
+							$fig3 = 0;
+
+							$fig4 = 0;
+
+							$fig5 = 0;
+
+
+
+							$fig6 = 0;
+
+							$fig7 = 0;
+
+							$fig8 = 0;
+
+							$fig9 = 0;
+
+							$fig10 = 0;
+
+
+
+							$fig11 = 0;
+
+							$fig12 = 0;
+
+							
+
+
+
+							$array = array();
+
+							require('Conexao.php');
+
+							$sql = "SELECT resposta FROM bigbang_questao WHERE codNivel = 2 ORDER BY rand() LIMIT 12";
+
+							$exe = mysqli_query($conecta,$sql);
+
+							while($linha = mysqli_fetch_array($exe)){
+
+								//$linha['resposta'].'<br>';
+
+								array_push($array, $linha['resposta']);
+
+							}
+
+
+
+							$fig1 = $array[0];
+
+							$fig2 = $array[1];
+
+							$fig3 = $array[2];
+
+							$fig4 = $array[3];
+
+							$fig5 = $array[4];
+
+
+
+							$fig6 = $array[5];
+
+							$fig7 = $array[6];
+
+							$fig8 = $array[7];
+
+							$fig9 = $array[8];
+
+							$fig10 = $array[9];
+
+
+
+							$fig11 = $array[10];
+
+							$fig12 = $array[11];
+
+
+
+							$arrayDicas = array();
+
+							for ($i=0; $i < 12; $i++) { 
+
+								$nome_elemento = $array[$i];
+
+
+
+
+
+							$sqli = "SELECT dica FROM bigbang_dicas d, bigbang_questao q WHERE d.codQuestao = q.codQuestao AND q.resposta = '$nome_elemento'";
+
+							$exec = mysqli_query($conecta,$sqli);
+
+							while($linhaa = mysqli_fetch_array($exec)){
+
+								
+
+								array_push($arrayDicas, $linhaa['dica']);
+
+
+
+								}
+
+							}
+
+						?>
+
+
+						<?php 
+
+							$x = mt_rand(1,8);
+
+							if ($x == 1) {
+								echo "
+								<button class='element' value='$fig1' id='fig1' onclick='salvarElemento(value, id)' ><img class='figura' id='f1' src='img/elementos/$fig1.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig2' id='fig2' onclick='salvarElemento(value, id)' ><img class='figura' id='f2' src='img/elementos/$fig2.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig3' id='fig3' onclick='salvarElemento(value, id)' ><img class='figura' id='f3' src='img/elementos/$fig3.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig9' id='fig9' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig9.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig4' id='fig4' onclick='salvarElemento(value, id)' ><img class='figura' id='f4' src='img/elementos/$fig4.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig10' id='fig10' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig10.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig5' id='fig5' onclick='salvarElemento(value, id)' ><img class='figura' id='f5' src='img/elementos/$fig5.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig11' id='fig11' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig11.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig6' id='fig6' onclick='salvarElemento(value, id)' ><img class='figura' id='f6' src='img/elementos/$fig6.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig7' id='fig7' onclick='salvarElemento(value, id)' ><img class='figura' id='f7' src='img/elementos/$fig7.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig12' id='fig12' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig12.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig8' id='fig8' onclick='salvarElemento(value, id)' ><img class='figura' id='f8' src='img/elementos/$fig8.jpg' width='45' height='55'></button>
+								";
+
+							} else if ($x == 2) {
+								echo "
+								<button class='element' value='$fig1' id='fig1' onclick='salvarElemento(value, id)' ><img class='figura' id='f1' src='img/elementos/$fig1.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig9' id='fig9' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig9.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig2' id='fig2' onclick='salvarElemento(value, id)' ><img class='figura' id='f2' src='img/elementos/$fig2.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig3' id='fig3' onclick='salvarElemento(value, id)' ><img class='figura' id='f3' src='img/elementos/$fig3.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig10' id='fig10' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig10.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig4' id='fig4' onclick='salvarElemento(value, id)' ><img class='figura' id='f4' src='img/elementos/$fig4.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig5' id='fig5' onclick='salvarElemento(value, id)' ><img class='figura' id='f5' src='img/elementos/$fig5.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig11' id='fig11' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig11.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig6' id='fig6' onclick='salvarElemento(value, id)' ><img class='figura' id='f6' src='img/elementos/$fig6.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig7' id='fig7' onclick='salvarElemento(value, id)' ><img class='figura' id='f7' src='img/elementos/$fig7.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig12' id='fig12' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig12.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig8' id='fig8' onclick='salvarElemento(value, id)' ><img class='figura' id='f8' src='img/elementos/$fig8.jpg' width='45' height='55'></button>
+								";
+								
+							} else if ($x == 3) {
+								echo "
+								<button class='element' value='$fig9' id='fig9' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig9.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig1' id='fig1' onclick='salvarElemento(value, id)' ><img class='figura' id='f1' src='img/elementos/$fig1.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig10' id='fig10' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig10.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig2' id='fig2' onclick='salvarElemento(value, id)' ><img class='figura' id='f2' src='img/elementos/$fig2.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig11' id='fig11' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig11.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig3' id='fig3' onclick='salvarElemento(value, id)' ><img class='figura' id='f3' src='img/elementos/$fig3.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig4' id='fig4' onclick='salvarElemento(value, id)' ><img class='figura' id='f4' src='img/elementos/$fig4.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig12' id='fig12' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig12.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig5' id='fig5' onclick='salvarElemento(value, id)' ><img class='figura' id='f5' src='img/elementos/$fig5.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig6' id='fig6' onclick='salvarElemento(value, id)' ><img class='figura' id='f6' src='img/elementos/$fig6.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig7' id='fig7' onclick='salvarElemento(value, id)' ><img class='figura' id='f7' src='img/elementos/$fig7.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig8' id='fig8' onclick='salvarElemento(value, id)' ><img class='figura' id='f8' src='img/elementos/$fig8.jpg' width='45' height='55'></button>
+								";
+								
+							} else if ($x == 4) {
+								echo "
+								<button class='element' value='$fig9' id='fig9' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig9.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig1' id='fig1' onclick='salvarElemento(value, id)' ><img class='figura' id='f1' src='img/elementos/$fig1.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig2' id='fig2' onclick='salvarElemento(value, id)' ><img class='figura' id='f2' src='img/elementos/$fig2.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig10' id='fig10' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig10.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig3' id='fig3' onclick='salvarElemento(value, id)' ><img class='figura' id='f3' src='img/elementos/$fig3.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig4' id='fig4' onclick='salvarElemento(value, id)' ><img class='figura' id='f4' src='img/elementos/$fig4.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig11' id='fig11' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig11.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig5' id='fig5' onclick='salvarElemento(value, id)' ><img class='figura' id='f5' src='img/elementos/$fig5.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig6' id='fig6' onclick='salvarElemento(value, id)' ><img class='figura' id='f6' src='img/elementos/$fig6.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig12' id='fig12' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig12.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig7' id='fig7' onclick='salvarElemento(value, id)' ><img class='figura' id='f7' src='img/elementos/$fig7.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig8' id='fig8' onclick='salvarElemento(value, id)' ><img class='figura' id='f8' src='img/elementos/$fig8.jpg' width='45' height='55'></button>
+								
+								";
+								
+							} else if ($x == 5) {
+								echo "
+								<button class='element' value='$fig1' id='fig1' onclick='salvarElemento(value, id)' ><img class='figura' id='f1' src='img/elementos/$fig1.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig9' id='fig9' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig9.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig2' id='fig2' onclick='salvarElemento(value, id)' ><img class='figura' id='f2' src='img/elementos/$fig2.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig3' id='fig3' onclick='salvarElemento(value, id)' ><img class='figura' id='f3' src='img/elementos/$fig3.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig4' id='fig4' onclick='salvarElemento(value, id)' ><img class='figura' id='f4' src='img/elementos/$fig4.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig10' id='fig10' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig10.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig5' id='fig5' onclick='salvarElemento(value, id)' ><img class='figura' id='f5' src='img/elementos/$fig5.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig6' id='fig6' onclick='salvarElemento(value, id)' ><img class='figura' id='f6' src='img/elementos/$fig6.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig11' id='fig11' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig11.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig7' id='fig7' onclick='salvarElemento(value, id)' ><img class='figura' id='f7' src='img/elementos/$fig7.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig8' id='fig8' onclick='salvarElemento(value, id)' ><img class='figura' id='f8' src='img/elementos/$fig8.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig12' id='fig12' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig12.jpg' width='45' height='55'></button>
+								";
+								
+							} else if ($x == 6) {
+								echo "
+								<button class='element' value='$fig1' id='fig1' onclick='salvarElemento(value, id)' ><img class='figura' id='f1' src='img/elementos/$fig1.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig9' id='fig9' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig9.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig2' id='fig2' onclick='salvarElemento(value, id)' ><img class='figura' id='f2' src='img/elementos/$fig2.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig10' id='fig10' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig10.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig3' id='fig3' onclick='salvarElemento(value, id)' ><img class='figura' id='f3' src='img/elementos/$fig3.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig4' id='fig4' onclick='salvarElemento(value, id)' ><img class='figura' id='f4' src='img/elementos/$fig4.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig5' id='fig5' onclick='salvarElemento(value, id)' ><img class='figura' id='f5' src='img/elementos/$fig5.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig11' id='fig11' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig11.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig6' id='fig6' onclick='salvarElemento(value, id)' ><img class='figura' id='f6' src='img/elementos/$fig6.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig7' id='fig7' onclick='salvarElemento(value, id)' ><img class='figura' id='f7' src='img/elementos/$fig7.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig8' id='fig8' onclick='salvarElemento(value, id)' ><img class='figura' id='f8' src='img/elementos/$fig8.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig12' id='fig12' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig12.jpg' width='45' height='55'></button>
+								";
+								
+							} else if ($x == 7) {
+								echo "
+								<button class='element' value='$fig9' id='fig9' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig9.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig1' id='fig1' onclick='salvarElemento(value, id)' ><img class='figura' id='f1' src='img/elementos/$fig1.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig10' id='fig10' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig10.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig11' id='fig11' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig11.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig2' id='fig2' onclick='salvarElemento(value, id)' ><img class='figura' id='f2' src='img/elementos/$fig2.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig3' id='fig3' onclick='salvarElemento(value, id)' ><img class='figura' id='f3' src='img/elementos/$fig3.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig4' id='fig4' onclick='salvarElemento(value, id)' ><img class='figura' id='f4' src='img/elementos/$fig4.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig5' id='fig5' onclick='salvarElemento(value, id)' ><img class='figura' id='f5' src='img/elementos/$fig5.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig6' id='fig6' onclick='salvarElemento(value, id)' ><img class='figura' id='f6' src='img/elementos/$fig6.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig7' id='fig7' onclick='salvarElemento(value, id)' ><img class='figura' id='f7' src='img/elementos/$fig7.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig12' id='fig12' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig12.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig8' id='fig8' onclick='salvarElemento(value, id)' ><img class='figura' id='f8' src='img/elementos/$fig8.jpg' width='45' height='55'></button>
+								";
+								
+							} else if ($x == 8) {
+								echo "
+								<button class='element' value='$fig1' id='fig1' onclick='salvarElemento(value, id)' ><img class='figura' id='f1' src='img/elementos/$fig1.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig9' id='fig9' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig9.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig10' id='fig10' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig10.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig11' id='fig11' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig11.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig2' id='fig2' onclick='salvarElemento(value, id)' ><img class='figura' id='f2' src='img/elementos/$fig2.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig3' id='fig3' onclick='salvarElemento(value, id)' ><img class='figura' id='f3' src='img/elementos/$fig3.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig4' id='fig4' onclick='salvarElemento(value, id)' ><img class='figura' id='f4' src='img/elementos/$fig4.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig12' id='fig12' onclick='salvarElemento(value, id)' ><img class='figura' src='img/elementos/$fig12.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig5' id='fig5' onclick='salvarElemento(value, id)' ><img class='figura' id='f5' src='img/elementos/$fig5.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig6' id='fig6' onclick='salvarElemento(value, id)' ><img class='figura' id='f6' src='img/elementos/$fig6.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig7' id='fig7' onclick='salvarElemento(value, id)' ><img class='figura' id='f7' src='img/elementos/$fig7.jpg' width='45' height='55'></button>
+								<button class='element' value='$fig8' id='fig8' onclick='salvarElemento(value, id)' ><img class='figura' id='f8' src='img/elementos/$fig8.jpg' width='45' height='55'></button>
+								";
+								
+							}
+
+
+						?>
+		
+
+						<div class="elemento-info">
+
+							<div id="elementoselecao">Elemento selecionado:</div>
+
+							<img id='selecao' src='img/elementos/fundo.png'>
+
+					    	<img id='distrib' src='img/distribuicao/fundo.png'>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="diagrama">
+
+						</div>
+
+						<button class="btdicas" onclick="puxarDicas()">DICAS</button>
+
+						<audio id="btsound">
+
+					        <source src="musica/button-09.mp3" type="audio/mp3">
+
+					    </audio>
+					
+				</div>
+
+				<div class="row justify-content-end">
+					 <div id="inicio">
+                        <a href="index.html">
+                            <img class="img-inicio" src="img/home.png" title="Início" >
+                        </a>
+                    </div>
+
+
+				</div>
+            </div>
+       	</div>
+
+
+
+
+
+
+
+<!-- INÍCIO DO MODAL -->
+<div id="modal"></div>
+<!-- FIM DO MODAL -->
+
+	</body>
+</html>
+<script type="text/javascript">
+		
+var dicas = [ '<?php echo $arrayDicas[0] ?> ',  '<?php echo $arrayDicas[1] ?>', '<?php echo $arrayDicas[2] ?>', '<?php echo $arrayDicas[3] ?>',
+'<?php echo $arrayDicas[4] ?>', '<?php echo $arrayDicas[5] ?>', '<?php echo $arrayDicas[6] ?>','<?php echo $arrayDicas[7] ?>', '<?php echo $arrayDicas[8] ?>',
+'<?php echo $arrayDicas[9] ?>', '<?php echo $arrayDicas[10] ?>', '<?php echo $arrayDicas[11] ?>', '<?php echo $arrayDicas[12] ?>', '<?php echo $arrayDicas[13] ?>',
+'<?php echo $arrayDicas[14] ?>', '<?php echo $arrayDicas[15] ?>', '<?php echo $arrayDicas[16] ?>', '<?php echo $arrayDicas[17] ?>', '<?php echo $arrayDicas[18] ?>',
+'<?php echo $arrayDicas[19] ?>', '<?php echo $arrayDicas[20] ?>', '<?php echo $arrayDicas[21] ?>', '<?php echo $arrayDicas[22] ?>', '<?php echo $arrayDicas[23] ?>',
+'<?php echo $arrayDicas[24] ?>', '<?php echo $arrayDicas[25] ?>', '<?php echo $arrayDicas[26] ?>', '<?php echo $arrayDicas[27] ?>', '<?php echo $arrayDicas[28] ?>',
+'<?php echo $arrayDicas[29] ?>', '<?php echo $arrayDicas[30] ?>', '<?php echo $arrayDicas[31] ?>', '<?php echo $arrayDicas[32] ?>', '<?php echo $arrayDicas[33] ?>',
+'<?php echo $arrayDicas[34] ?>', '<?php echo $arrayDicas[35] ?>'];	
+
+var contador = 24;
+var cont1 = 0;
+var cont2 = 1;
+var cont3 = 2;
+var geral = 1;
+var pontos = 0;
+var contadorElemento = 8;
+
+	var fig1 = '<?php echo $array[0]?>';
+	var fig2 = '<?php echo $array[1]?>';
+	var fig3 = '<?php echo $array[2]?>';
+	var fig4 = '<?php echo $array[3]?>';
+	var fig5 = '<?php echo $array[4]?>';
+	var fig6 = '<?php echo $array[5]?>';
+	var fig7 = '<?php echo $array[6]?>';
+	var fig8 = '<?php echo $array[7]?>';
+
+var verificadorQtDicas = 0; //limita a quantidade de dicas.
+var semDicas = 0; //impede de ficar clicando nos elementos sem antes clicar nas dicas.
+
+	function puxarDicas(){
+		document.getElementById('btsound').play();
+		if ((contador>0) && (geral == 1) && (verificadorQtDicas != 1) && (block != 1)) {
+			um();
+			semDicas = 1;
+			document.getElementById('mensag').innerHTML= "";
+			// document.getElementById('errou').innerHTML= "";
+			document.getElementById('msg').style.backgroundColor = '#00A575';
+			
+		} else if ((contador>0) && (geral == 2) && (verificadorQtDicas != 1) && (block != 1)) {
+			dois();
+			semDicas = 1;
+
+		} else if ((contador>0) && (geral == 3) && (verificadorQtDicas != 1) && (block != 1)) {
+			tres();
+			verificadorQtDicas = 1;
+			semDicas = 1;
+		} else if(verificadorQtDicas == 1){
+			alert("Apenas 3 DICAS são permitidas por elemento! Por favor selecione um elemento e posicione-o na tabela.");
+		} else if(block == 1){
+			alert("Por favor posicione o elemento selecionado na tabela!");
+		}  
+		}
+
+
+		function um(){
+			document.getElementById('dicaUm').innerHTML = "1 - "+dicas[cont1];
+			cont1 += 3;
+			geral = 2;
+			document.getElementById('dicaDois').innerHTML = '';
+			document.getElementById('dicaTres').innerHTML = '';
+			pontos = 5;
+		}
+		function dois(){
+			document.getElementById('dicaDois').innerHTML = "2 - "+dicas[cont2];
+			cont2 += 3;
+			geral = 3;
+			pontos = 3;
+		}
+		function tres(){
+			document.getElementById('dicaTres').innerHTML = "3 - "+dicas[cont3];
+			cont3 += 3;
+			geral = 1;
+			pontos = 1;
+		}
+
+		// função verificar elementos
+		var listaElemento ='';
+		var elementoTabela = '';
+		var validacao = 1;
+		var score = 0;
+		var contRodada = 8;
+		var block = 0;
+
+		function salvarElemento (value, id) {
+			 if (semDicas == 1){
+			 	if (listaElemento == ''){
+			 		listaElemento = value;
+			 		document.getElementById('selecao').src = "img/elementos/"+listaElemento+".jpg";
+			 		validacao = 1;
+			 	} else{
+			 		alert("Elemento já selecionado! Por favor indique sua posição na tabela.");
+			 	}
+				if ((contRodada == 8) && (validacao == 1)) {
+					if (listaElemento == fig1) {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						score += pontos;
+						document.getElementById('score').innerHTML= score;
+						validacao = 0;
+						document.getElementById('acerto').play();
+						document.getElementById('f1').src = "img/elementos-cinza/"+listaElemento+".jpg";
+						block = 1;
+						
+					} else{
+						document.getElementById('erro').play();
+						block = 1;
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+
+
+					}
+				} else if ((contRodada == 7) && (validacao == 1)){
+					if (listaElemento == fig2) {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						score += pontos;
+						document.getElementById('score').innerHTML= score;
+						validacao = 0;
+						document.getElementById('acerto').play();
+						document.getElementById('f2').src = "img/elementos-cinza/"+listaElemento+".jpg";
+						block = 1;
+						
+					} else{
+						document.getElementById('erro').play();
+						block = 1;
+						
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				} else if ((contRodada == 6) && (validacao == 1)){
+					if (listaElemento == fig3) {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						score += pontos;
+						document.getElementById('score').innerHTML= score;
+						validacao = 0;
+						document.getElementById('acerto').play();
+						document.getElementById('f3').src = "img/elementos-cinza/"+listaElemento+".jpg";
+						
+						block = 1;
+						
+					} else{
+						document.getElementById('erro').play();
+						block = 1;
+						
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				} else if ((contRodada == 5) && (validacao == 1)){
+					if (listaElemento == fig4) {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						score += pontos;
+						document.getElementById('score').innerHTML= score;
+						validacao = 0;
+						document.getElementById('acerto').play();
+						document.getElementById('f4').src = "img/elementos-cinza/"+listaElemento+".jpg";
+						
+						block = 1;
+						
+					} else{
+						document.getElementById('erro').play();
+						block = 1;
+						
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				} else if ((contRodada == 4) && (validacao == 1)){
+					if (listaElemento == fig5) {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						score += pontos;
+						document.getElementById('score').innerHTML= score;
+						validacao = 0;
+						document.getElementById('acerto').play();
+						document.getElementById('f5').src = "img/elementos-cinza/"+listaElemento+".jpg";
+						
+						block = 1;
+						
+					} else{
+						document.getElementById('erro').play();
+						block = 1;
+						
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				} else if ((contRodada == 3) && (validacao == 1)) {
+					if (listaElemento == fig6) {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						score += pontos;
+						document.getElementById('score').innerHTML= score;
+						validacao = 0;
+						document.getElementById('acerto').play();
+						document.getElementById('f6').src = "img/elementos-cinza/"+listaElemento+".jpg";
+						
+						block = 1;
+						
+					} else{
+						document.getElementById('erro').play();
+						block = 1;
+						
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				} else if ((contRodada == 2) && (validacao == 1)){
+					if (listaElemento == fig7)  {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						score += pontos;
+						document.getElementById('score').innerHTML= score;
+						validacao = 0;
+						document.getElementById('acerto').play();
+						document.getElementById('f7').src = "img/elementos-cinza/"+listaElemento+".jpg";
+						
+						block = 1;
+						
+					} else{
+						document.getElementById('erro').play();
+						block = 1;
+						
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				} else if ((contRodada == 1) && (validacao == 1)) {
+					if (listaElemento == fig8){
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						score += pontos;
+						document.getElementById('score').innerHTML= score;
+						validacao = 0;
+						document.getElementById('acerto').play();
+						document.getElementById('f8').src = "img/elementos-cinza/"+listaElemento+".jpg";
+						
+						block = 1;
+						
+					} else{
+						document.getElementById('erro').play();
+						block = 1;
+						
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				}
+				if (contRodada == 0) {
+				// CRIA HTML DINÂNICO COM MODAL.
+					var divFora = document.createElement("p");
+					var node = document.createTextNode("Parabéns!");
+					divFora.appendChild(node);
+
+					var h22 = document.createElement("h2");
+					var node2 = document.createTextNode("Nível Finalizado!");
+					h22.appendChild(node2);
+
+					var imagem = document.createElement("img");
+					imagem.setAttribute('id', 'trofeuRanking');
+					imagem.setAttribute('src', 'img/trofeu/trofeuRanking.png');
+					imagem.setAttribute('width', '232');
+					imagem.setAttribute('height', '182');
+
+					var div1 = document.createElement("div");
+					div1.setAttribute('id', 'divDentro');
+
+					var div2 = document.createElement("div");
+					div2.setAttribute('id', 'abrirModal');
+					div2.setAttribute('class', 'modalDialog');
+
+					// form
+					var form = document.createElement("form");
+					form.setAttribute('action', 'fimdejogo.php');
+					form.setAttribute('method', 'POST');
+					form.setAttribute('name', 'rank');
+
+					// hidden usuario
+					var name = document.createElement("input");
+					name.setAttribute('id', 'hiddenNome');
+					name.setAttribute('type', 'hidden');
+					name.setAttribute('name', 'nome');
+					name.setAttribute('value', '');
+
+					// hidden pontuacao
+					var pontuacao = document.createElement("input");
+					pontuacao.setAttribute('id', 'hiddenPontuacao');
+					pontuacao.setAttribute('type', 'hidden');
+					pontuacao.setAttribute('name', 'pontuacao');
+					pontuacao.setAttribute('value', '');
+
+					// hidden nivel
+					var nivel = document.createElement("input");
+					nivel.setAttribute('id', 'hiddenNivel');
+					nivel.setAttribute('type', 'hidden');
+					nivel.setAttribute('name', 'nivel');
+					nivel.setAttribute('value', 'CURIOSO');
+					
+					// botão Gravar
+					var submit = document.createElement("input");
+					submit.setAttribute('id', 'btsubmit');
+					submit.setAttribute('type', 'submit');
+					submit.setAttribute('value', 'OK');
+
+					form.appendChild(name);
+					form.appendChild(pontuacao);
+					form.appendChild(nivel);
+					form.appendChild(submit);
+
+					div1.appendChild(h22);	
+					div1.appendChild(imagem);
+					div1.appendChild(divFora);
+					div1.appendChild(form);
+
+
+					div2.appendChild(div1);
+
+					var element3 = document.getElementById('modal');
+					element3.appendChild(div2);
+
+					// alterando valor hidden name
+					document.getElementById('hiddenNome').value = '<?php echo $jogador ?>';
+					document.getElementById('hiddenPontuacao').value = score;
+
+					// setTimeout(function(){ document.rank.submit(); }, 2000);
+
+			}
+
+			 } else{
+			 	alert("As dicas devem ser solicitadas antes de clicar no elemento!");
+			 }
+
+		}
+
+		function verificar(value){
+			elementoTabela = value;
+
+			if (contRodada == 8) {
+				if (listaElemento != '') {
+
+					if ((elementoTabela == listaElemento) && (elementoTabela == fig1)) {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('acerto').play();
+// MUDAR A COR DO BACKGROUND E DA COR DA MENSAGEM DE ACERTO
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						simbolo(value);
+						score += 5;
+						document.getElementById('score').innerHTML= score;
+						contRodada--;
+						elementoTabela = '';
+						listaElemento = '';
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						// ---------------
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}// -----------------------------------
+
+					} else{
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+// MUDAR A COR DO BACKGROUND E DA COR DA MENSAGEM DE ERRO
+						document.getElementById('erro').play();
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				} else{
+					alert("Selecione um elemento antes!");
+				} 
+			} else if (contRodada == 7) {
+				if (listaElemento != '') {
+
+					if ((elementoTabela == listaElemento) && (elementoTabela == fig2)) {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('acerto').play();
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						simbolo(value);
+						score += 5;
+						document.getElementById('score').innerHTML= score;
+						verificadorQtDicas = 0;
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					} else{
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('erro').play();
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				} else{
+					alert("Selecione um elemento antes!");
+			} 
+			} else if (contRodada == 6) {
+				if (listaElemento != '') {
+
+					if ((elementoTabela == listaElemento) && (elementoTabela == fig3)) {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('acerto').play();
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						simbolo(value);
+						score += 5;
+						document.getElementById('score').innerHTML= score;
+						contRodada--;
+						verificadorQtDicas = 0;
+						elementoTabela = '';
+						listaElemento = '';
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					} else{
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('erro').play();
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				} else{
+					alert("Selecione um elemento antes!");
+			} 
+			} else if (contRodada == 5) {
+				if (listaElemento != '') {
+
+					if ((elementoTabela == listaElemento) && (elementoTabela == fig4)) {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('acerto').play();
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						simbolo(value);
+						score += 5;
+						document.getElementById('score').innerHTML= score;
+						contRodada--;
+						verificadorQtDicas = 0;
+						elementoTabela = '';
+						listaElemento = '';
+						semDicas = 0;
+						document.getElementById('selecao').src = "";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					} else{
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('erro').play();
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				} else{
+					alert("Selecione um elemento antes!");
+			} 
+			} else if (contRodada == 4) {
+				if (listaElemento != '') {
+
+					if ((elementoTabela == listaElemento) && (elementoTabela == fig5)) {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('acerto').play();
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						simbolo(value);
+						score += 5;
+						document.getElementById('score').innerHTML= score;
+						contRodada--;
+						verificadorQtDicas = 0;
+						elementoTabela = '';
+						listaElemento = '';
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					} else{
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('erro').play();
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				} else{
+					alert("Selecione um elemento antes!");
+			} 
+			} else if (contRodada == 3) {
+				if (listaElemento != '') {
+
+					if ((elementoTabela == listaElemento) && (elementoTabela == fig6)) {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('acerto').play();
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						simbolo(value);
+						score += 5;
+						document.getElementById('score').innerHTML= score;
+						contRodada--;
+						verificadorQtDicas = 0;
+						elementoTabela = '';
+						listaElemento = '';
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					} else{
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('erro').play();
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				} else{
+					alert("Selecione um elemento antes!");
+			} 
+			} else if (contRodada == 2) {
+				if (listaElemento != '') {
+
+					if ((elementoTabela == listaElemento) && (elementoTabela == fig7)) {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('acerto').play();
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						simbolo(value);
+						score += 5;
+						document.getElementById('score').innerHTML= score;
+						contRodada--;
+						verificadorQtDicas = 0;
+						elementoTabela = '';
+						listaElemento = '';
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					} else{
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('erro').play();
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				} else{
+					alert("Selecione um elemento antes!");
+			} 
+			} else if (contRodada == 1) {
+				if (listaElemento != '') {
+
+					if ((elementoTabela == listaElemento) && (elementoTabela == fig8)) {
+						document.getElementById('mensag').innerHTML= "ACERTOU!!!";
+						document.getElementById('acerto').play();
+						document.getElementById('msg').style.backgroundColor = '#0B1842';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						simbolo(value);
+						score += 5;
+						document.getElementById('score').innerHTML= score;
+						contRodada--;
+						verificadorQtDicas = 0;
+						elementoTabela = '';
+						listaElemento = '';
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					} else{
+						document.getElementById('mensag').innerHTML= "ERROU!!!";
+						document.getElementById('erro').play();
+						document.getElementById('msg').style.backgroundColor = '#B80000';
+						document.getElementById('mensag').style.color = '#FFFFFF';
+						elementoTabela = '';
+						listaElemento = '';
+						contRodada--;
+						verificadorQtDicas = 0;
+						semDicas = 0;
+						document.getElementById('selecao').src = "img/elementos/fundo.png";
+						block = 0;
+
+						if(geral == 2){
+							cont2 +=3;
+							cont3 +=3;
+							geral = 1;
+							contador -=3; 
+						} else if (geral == 3) {
+							cont3 +=3;
+							geral = 1;
+							contador -=1; 
+						}
+					}
+				} else{
+					alert("Selecione um elemento antes!");
+				} 
+			}
+			if (contRodada == 0) {
+				// CRIA HTML DINÂNICO COM MODAL.
+					var divFora = document.createElement("p");
+					var node = document.createTextNode("Parabéns!");
+					divFora.appendChild(node);
+
+					var h22 = document.createElement("h2");
+					var node2 = document.createTextNode("Nível Finalizado!");
+					h22.appendChild(node2);
+
+					var imagem = document.createElement("img");
+					imagem.setAttribute('id', 'trofeuRanking');
+					imagem.setAttribute('src', 'img/trofeu/trofeuRanking.png');
+					imagem.setAttribute('width', '232');
+					imagem.setAttribute('height', '182');
+
+					var div1 = document.createElement("div");
+					div1.setAttribute('id', 'divDentro');
+
+					var div2 = document.createElement("div");
+					div2.setAttribute('id', 'abrirModal');
+					div2.setAttribute('class', 'modalDialog');
+
+					// form
+					var form = document.createElement("form");
+					form.setAttribute('action', 'fimdejogo.php');
+					form.setAttribute('method', 'POST');
+					form.setAttribute('name', 'rank');
+
+					// hidden usuario
+					var name = document.createElement("input");
+					name.setAttribute('id', 'hiddenNome');
+					name.setAttribute('type', 'hidden');
+					name.setAttribute('name', 'nome');
+					name.setAttribute('value', '');
+
+					// hidden pontuacao
+					var pontuacao = document.createElement("input");
+					pontuacao.setAttribute('id', 'hiddenPontuacao');
+					pontuacao.setAttribute('type', 'hidden');
+					pontuacao.setAttribute('name', 'pontuacao');
+					pontuacao.setAttribute('value', '');
+
+					// hidden nivel
+					var nivel = document.createElement("input");
+					nivel.setAttribute('id', 'hiddenNivel');
+					nivel.setAttribute('type', 'hidden');
+					nivel.setAttribute('name', 'nivel');
+					nivel.setAttribute('value', 'CURIOSO');
+					
+					// botão Gravar
+					var submit = document.createElement("input");
+					submit.setAttribute('id', 'btsubmit');
+					submit.setAttribute('type', 'submit');
+					submit.setAttribute('value', 'OK');
+
+					form.appendChild(name);
+					form.appendChild(pontuacao);
+					form.appendChild(nivel);
+					form.appendChild(submit);
+
+					div1.appendChild(h22);	
+					div1.appendChild(imagem);
+					div1.appendChild(divFora);
+					div1.appendChild(form);
+
+
+					div2.appendChild(div1);
+
+					var element3 = document.getElementById('modal');
+					element3.appendChild(div2);
+
+					// alterando valor hidden name
+					document.getElementById('hiddenNome').value = '<?php echo $jogador ?>';
+					document.getElementById('hiddenPontuacao').value = score;
+
+					// setTimeout(function(){ document.rank.submit(); }, 2000);
+
+			} 
+		}		
+
+
+
+
+ 			
+</script>

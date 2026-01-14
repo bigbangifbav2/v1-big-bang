@@ -1,0 +1,359 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+body{
+  background: -webkit-radial-gradient(#00A575, #003135); /* For Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#00A575, #003135); /* For Opera 11.1 to 12.0 */
+  background: -moz-radial-gradient(#00A575, #003135); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#00A575, #003135); /* Standard syntax */
+	
+	 
+}
+.barra{
+	width: 100%;
+	height: 670px;
+	margin-top: 0px;
+	overflow-y: scroll;
+    
+    
+}
+video{
+	width: 100%;
+
+}
+.efeito{
+margin: 25% 0% 20% 20%;
+width: 46%;
+
+}
+.voltar{
+	position: absolute;
+	top: 65%;
+}
+
+#tutorial{
+
+	margin: 10% 0% 0% 37%;
+
+	width: 55%;
+}
+#creditos{
+
+	margin: 10% 0% 6% 0%;
+	width: 100%;
+}
+
+#ranking{
+	margin-top: 10%;
+	width: 80%;
+}
+.imagem_redonda{
+	margin: 0 auto;
+	text-align: center;
+	border-radius:180px;
+	-moz-border-radius:180px;
+	-webkit-border-radius:180px;
+}
+
+.imagem_redonda {
+-webkit-transform: rotateX(360deg) rotateZ(0deg);
+-moz-transform: rotateX(360deg) rotateZ(0deg);
+-o-transform: rotateX(360deg) rotateZ(0deg);
+-ms-transform: rotateX(360deg) rotateZ(0deg);
+transform: rotateX(360deg) rotateZ(0deg);
+}
+
+.imagem_redonda{
+
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	-moz-transform:perspective(600px) rotateY(0deg);
+	-o-transform:perspective(600px) rotateY(0deg) ;
+	-webkit-transition:All 0.8s ease;
+	-moz-transition:All 0.8s ease;
+	-o-transition:All 0.8s ease;
+}
+.imagem_redonda:hover{
+	-webkit-transform: perspective(600px) rotateY(360deg) ;
+	-moz-transform: perspective(600px) rotateY(360deg) ;
+	-o-transform: perspective(600px) rotateY(360deg);
+}
+hr{		color: #3B9AC6;
+		background-color: #34495e;
+}
+.jogador{
+	background-color: #00A575;
+
+	text-align: center;
+
+	border-radius: 3px;
+
+	-moz-border-radius: 3px;
+
+	-webkit-border-radius: 3px;
+
+	margin-bottom: 5%;
+
+	padding-bottom: 10%;
+}
+.nomeJogador{
+	color: #FFFFFF;
+	font-family: monospace;
+	font-weight: 900;
+	font-size: 15px;
+	padding-top: 7%;
+
+	margin-bottom: 5%;
+}
+.nomeNivel{
+	color: #FFFFFF;
+	font-family: monospace;
+	font-weight: 900;
+	font-size: 15px;
+	margin-bottom: 1px;
+}
+.pontuacao{
+	background-color: #00A575;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	text-align: center;
+
+	margin-bottom: 5%;
+
+	padding-top: 5%;
+}
+label{
+	color: #FFFFFF;
+	font-family: monospace;
+	font-weight: 900;
+	text-align: center;
+}
+
+.descricao{
+	background-color: #0B1842;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	text-align: center;
+}
+#gse{
+	width: 17%;
+	
+}
+#ifba{
+	width: 33%;
+	margin-right: 15%;
+}
+#capes{
+	width: 14%;
+	margin-right: 15%;
+}
+.apoio label{
+	display: flex;
+	margin: 2% 0% 1% 5%;
+}
+.fora-ranking{
+	position: relative;
+	width: 100%;
+	height: 374px;
+	margin-top: 100px;
+}
+.blocos{
+	margin-right: 30px;
+	text-align: center;
+}
+.dentro{
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 30px;
+}
+h6{
+	color: #FFFFFF;
+	font-family: monospace;
+	font-weight: 200;
+	font-size: 20px;
+	text-align: justify;
+}
+h5{
+	color: #FFFFFF;
+	font-family: monospace;
+	font-weight: 900;
+	font-size: 20px;
+	text-align: center;	
+}
+.cor1{
+	background-color: #0B1842;
+}
+.cor2{
+	background-color: #00A575;
+}
+.bt_regras{
+	background-color: #00A575;
+
+	border-radius: 3px;
+
+	color: #FFFFFF;
+
+	font-family: monospace;
+
+	text-decoration: none;
+
+	position: absolute;
+
+	bottom: 7%;
+
+	padding: 4%;
+}
+
+.bt_regras:hover{
+	background-color: #0B1842;
+}
+#format{
+	text-align: justify;
+	color: #FFFFFF;
+	font-family: monospace;
+	font-size: 14px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+
+}
+
+#format h1{
+	text-align: center;
+	margin-top: 4%;
+
+}
+
+
+
+
+
+@media (max-width: 575.98px) { 
+.nomeJogador, label{
+	font-size: 8px;	
+}
+.bt_regras{
+	font-size: 4px;
+}
+.imagem_redonda{
+	width: 30px;
+	height: 30px;
+}
+.descricao{
+	height: 38px;
+}
+.efeito:hover{
+	box-shadow: 0px 0px 5px #CCC;
+	border-radius:50px;
+	-moz-border-radius:50px;
+	-webkit-border-radius:50px;
+}
+
+#format h1{
+	text-align: center;
+	margin-top: 4%;
+	font-size: 28px;
+
+}
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+.nomeJogador, label {
+	font-size: 11px;	
+}
+.bt_regras{
+	font-size: 9px;
+}
+.imagem_redonda{
+	width: 50px;
+	height: 50px;
+}
+.descricao{
+	height: 31px;
+}
+.efeito:hover{
+	box-shadow: 0px 0px 15px #CCC;
+	border-radius:140px;
+	-moz-border-radius:140px;
+	-webkit-border-radius:140px;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+.nomeJogador, label{
+	font-size: 15px;	
+}
+.bt_regras{
+	font-size: 14px;
+}
+.imagem_redonda{
+	width: 70px;
+	height: 70px;
+}
+.descricao{
+	height: 43px;
+}
+.tudo{
+	width: 90%
+}
+.efeito:hover{
+	box-shadow: 0px 0px 20px #CCC;
+	border-radius:160px;
+	-moz-border-radius:160px;
+	-webkit-border-radius:160px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+.nomeJogador, label, .bt_regras{
+	font-size: 14px;	
+}
+.imagem_redonda{
+	width: 90px;
+	height: 90px;
+}
+.descricao{
+	height: 40px;
+}
+.tudo{
+	width: 90%
+}
+.efeito:hover{
+	box-shadow: 0px 0px 22px #CCC;
+	border-radius:170px;
+	-moz-border-radius:170px;
+	-webkit-border-radius:170px;
+}
+
+}
+@media (min-width: 1200px) { 
+
+.nomeJogador, label, .bt_regras{
+	font-size: 15px;	
+}
+
+.imagem_redonda{
+	width: 100px;
+	height: 100px;
+}
+.descricao{
+	height: 45px;
+}
+.tudo{
+	width: 90%
+}
+.efeito:hover{
+	box-shadow: 0px 0px 25px #CCC;
+	border-radius:180px;
+	-moz-border-radius:180px;
+	-webkit-border-radius:180px;
+}
+
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<!-- Meta tags Obrigatórias -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+            <script type="text/javascript" src="jquery.js"></script>
+
+            <meta http-equiv="pragma" content="no-cache">
+
+            <title>Big Bang Game</title>
+
+            <link rel="icon" href="#" />
+
+            <link rel="stylesheet" type="text/css" href="css/styleNiveis.css"/> 
+
+            <script type="text/javascript" src="js/jquery-1.5.2.js"></script>
+
+            <script type="text/javascript" src="js/bigbang.js"></script>
+
+            <script language="javascript" type="text/javascript">
+	  
+	$(function(){
+	
+		$("body").css("display", "none");
+	 
+		$("body").fadeIn('slow');
+	 
+		$("a").click(function(event){
+			event.preventDefault();
+			linkLocation = this.href;
+			$("body").fadeOut(1000, redirectPage);
+		});
+	 
+		function redirectPage() {
+			window.location = linkLocation;
+		}
+		
+	});
+
+	</script>
+	<script type="text/javascript">
+		function select(){
+			document.getElementById('select').play();
+		}
+	</script>
+</head>
+	<body>
+		
+			<div class="row justify-content-center">
+				<div class="col-7">
+
+					<audio id="select">
+				        <source src="musica/selecao.ogg" type="audio/ogg">
+				    </audio>
+					<div><img  id="selecionar_nivel" src="img/selecionar_nivel.png" alt="Selecionar nível"/></div>
+					
+				</div>
+
+			</div>
+			
+			<div class="row justify-content-center">
+				<div class="col-9 ">
+					<div class="quadradoNiveis1 corUm" onclick="select()"><a href="avatarIniciante.html"><img id="imagemNivel" src="img/iniciante.png" alt="Iniciante" title="Nível Iniciante" /></a></div>
+
+			
+					<div class="quadradoNiveis2 corDois" onclick="select()"><a href="avatarCurioso.html"><img id="imagemNivel" src="img/curioso.png" alt="Curioso" title="Nível Curioso"/></a></div>
+			
+					<div class="quadradoNiveis3 corTres" onclick="select()"><a href="avatarCientista.html"><img id="imagemNivel" src="img/cientista.png" alt="Cientista" title="Nível Cientista"/></a></div>
+
+				</div>
+
+			</div>	
+
+			<div class="row">
+				<div class="col-2">
+					<div id="bt_som"></div>
+		 			<div><a href="index.html"><img class="efeito" src="img/voltar.png" title="Voltar"></a></div>
+				</div>
+			</div>	
+	
+    </body>
+</html>

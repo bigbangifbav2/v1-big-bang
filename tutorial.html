@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<!-- Meta tags Obrigatórias -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <!-- Bootstrap CSS -->
+             <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+            <script type="text/javascript" src="jquery.js"></script>
+
+            <meta http-equiv="pragma" content="no-cache">
+
+            <title>Big Bang Game</title>
+
+            <link rel="icon" href="#" />
+
+            <link rel="stylesheet" type="text/css" href="css/estilo.css"/> 
+
+		<script language="javascript" type="text/javascript">
+	$(function(){
+	
+		$("body").css("display", "none");
+	 
+		$("body").fadeIn('slow');
+	 
+		$("a").click(function(event){
+			event.preventDefault();
+			linkLocation = this.href;
+			$("body").fadeOut(1000, redirectPage);
+		});
+	 
+		function redirectPage() {
+			window.location = linkLocation;
+		}
+		
+	});
+
+	</script>
+</head>
+	<body>
+		<div class="row justify-content-center">
+				<div class="col-6">
+
+					<div><img id="tutorial" src="img/nome_tutorial.png" alt=""/></div>
+										
+					
+				</div>
+				<div class="col-2">
+					<a class="bt_regras" href="regras.html">Leia as regras</a>
+				</div>
+
+		</div>
+
+			<div class="row">
+				<div class="col-2">
+					<div id="bt_som"></div>
+			 		<div><a href="index.html"><img src="img/voltar.png" class="efeito voltar" title="Voltar"></a></div>
+
+				</div>
+				<div class="col-8">
+
+					<video autoplay controls>
+		 				<source src="video/tutorial_bigbang.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+
+			</div>
+	 		
+    </body>
+</html>
